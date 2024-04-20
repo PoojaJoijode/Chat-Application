@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/msglayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginStart="150dp"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:backgroundTint="@color/chat_color_receiver"
+        android:id="@+id/right_chat_layout"
+        >
+
+
+
+        <TextView
+            android:id="@+id/msgc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/circular_bg"
+            android:padding="15dp"
+            android:text="Message"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/right_images"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/circular_bg"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/circular_bg" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/left_chat_layout"
+        android:padding="8dp"
+        android:layout_marginEnd="150dp"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:backgroundTint="@color/chat_color_sender"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/left_msgc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Message"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/left_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/circular_bg"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/circular_bg" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
